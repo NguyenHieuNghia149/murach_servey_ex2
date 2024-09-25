@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+<img src="./images/download.jpg" alt="book">
+<h1 style="text-align: center" class="title">Servey</h1>
+<p style="text-align: center">if you have a moment. we'd appreciate it if you would fill out this survey.</p>
+<div class=" container">
+    <h1>Your information</h1>
+    <form  action="emailList" method="post">
+        <input class="form-control"  type="hidden" name="action" value="add">
+        <label class="form-label">First Name:</label>
+        <input class="form-control" type="text" name="firstName" required><br>
+        <label class="form-label">Last Name:</label>
+        <input class="form-control" type="text" name="lastName" required><br>
+        <label class="form-label">Email:</label>
+        <input class="form-control"  type="email" name="email" required><br>
+        <label class="form-label" >Date of birth:</label>
+        <input class="form-control" id = "birthday" type="date" name="date" required><br>
+        <h1>How did you hear about us?</h1>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class=" btn btn-success ">
+                <input type="radio" id = "searchEngine1" name = "sourceInfor" value="Search engine" autocomplete="off" checked> Search engine
+            </label>
+
+            <label class=" btn btn-success"  >
+                <input type="radio" id = "searchEngine2" name = "sourceInfor" value="World of mouth" autocomplete="off"> World of mouth
+            </label>
+
+            <label  class=" btn btn-success">
+                <input type="radio" id = "searchEngine3" name = "sourceInfor"value="Social media" autocomplete="off"> Social Media
+            </label>
+
+            <label class="form-label btn btn-success">
+                <input type="radio" id = "searchEngine4" name = "sourceInfor" value ="Other" autocomplete="off"> Other
+            </label>
+        </div>
+
+        <h1>Would you like to receive annoucements <br> about new CDs and special offers</h1>
+        <input class="form-check-input" type="checkbox" id="offer" name="offer" value="Yes, I'd like that">
+        <label  for="offer">Yes, I'd like that</label><br>
+        <input class=" form-check-input" type="checkbox" id="offer2" name="offer" value="Yes, please send me email annoucements">
+        <label  for="offer2">Yes, please send me email annoucements</label><br>
+        <label  for="contact">Please contact me by:</label>
+        <select class="form-select" name="contact" id="contact">
+            <option value="Email Or Postal">Email or postal mail</option>
+            <option value="Email Only">Email only</option>
+            <option value="Postal Only">Postal email only</option>
+        </select>
+        <label>&nbsp;</label>
+        <input class="btn btn-outline-success" style=" display: block; margin-left: auto; margin-right: auto; width: 150px;" type="submit" value="Submit" id="submit">
+    </form>
+</div>
+</body>
+</html>

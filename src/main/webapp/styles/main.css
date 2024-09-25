@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.9);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+h1 {
+    color: teal;
+}
+
+#emailForm {
+    margin-left: 54px;
+}
+
+label {
+    width: auto;
+    margin-bottom: 0.5em;
+
+}
+
+input[type="text"], input[type="email"], input[type ="date"] {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+br {
+    clear: both;
+}
+
+
+
+
+#contact {
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+}
+
+.form--item {
+    margin-bottom: 20px;
+}
+
+.btn-return {
+    padding: 5px 25px;
+    background-color: #C4DAD2;
+    color: #16423C;
+    cursor: pointer;
+}
+
+
+.mr-10 {
+    margin-right: 10px;
+}
